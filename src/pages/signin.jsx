@@ -39,7 +39,7 @@ const Signin = () => (
       name="nest-messages"
       onFinish={onFinish}
       style={{
-        maxWidth: 600,
+        maxWidth: 800,
       }}
       validateMessages={validateMessages}
     >
@@ -65,19 +65,7 @@ const Signin = () => (
       >
         <Input />
       </Form.Item>
-      <Form.Item
-        name={["user", "age"]}
-        label="Age"
-        rules={[
-          {
-            type: "number",
-            min: 0,
-            max: 99,
-          },
-        ]}
-      >
-        <InputNumber />
-      </Form.Item>
+
       <Form.Item name={["user", "website"]} label="Website">
         <Input />
       </Form.Item>
