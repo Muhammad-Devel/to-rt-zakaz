@@ -7,8 +7,9 @@ import {
   LoginOutlined,
   HomeOutlined,
 } from "@ant-design/icons";
-import { Button, Layout, Menu, theme } from "antd";
+import { Button, Layout, Menu, theme, Typography } from "antd";
 const { Header, Sider, Content } = Layout;
+const { Title } = Typography;
 
 const Layer = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -20,6 +21,18 @@ const Layer = () => {
       <Layout style={{ height: "100vh" }}>
         <Sider trigger={null} collapsible collapsed={collapsed}>
           <div className="demo-logo-vertical" />
+          <Button
+            className="text-[#fff] mt-2 mb-3"
+            type="text"
+            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+            onClick={() => setCollapsed(!collapsed)}
+            style={{
+              fontSize: "18px",
+              width: 35,
+              height: 35,
+              float: "right",
+            }}
+          />
           <Menu
             theme="dark"
             mode="inline"
@@ -50,16 +63,9 @@ const Layer = () => {
               background: colorBgContainer,
             }}
           >
-            <Button
-              type="text"
-              icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-              onClick={() => setCollapsed(!collapsed)}
-              style={{
-                fontSize: "16px",
-                width: 64,
-                height: 64,
-              }}
-            />
+            <Title className="font-bold font-sans pt-2 pl-5">
+              To'rt Markaz
+            </Title>
           </Header>
           <Content
             style={{

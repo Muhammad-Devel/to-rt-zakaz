@@ -11,9 +11,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layer />}>
           <Route index element={<Home />} />
-          <Route path="login" element={<Login />} />
-          <Route path="signin" element={<Signin />} />
         </Route>
+        <Route path="login" element={<Login />} />
+        <Route path="signin" element={<Signin />} />
       </Routes>
     </BrowserRouter>
   );

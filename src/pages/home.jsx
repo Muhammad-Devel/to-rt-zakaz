@@ -1,5 +1,6 @@
-const Home = () => {
-  return <h1>Home page</h1>;
-};
+import Products from "./products";
 
+const Home = () => {
+  return <Products />;
+};
 export default Home;
