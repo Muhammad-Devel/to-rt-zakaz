@@ -66,8 +66,8 @@ export default function Products() {
   return (
     <div className="bg-white">
       
-      <div className="mx-auto max-w-2xl px-4 py-6 sm:px-6 sm:py-10 lg:max-w-7xl lg:px-8">
-        <h2 className="">Mahsulotlar</h2>
+      <div className="mx-auto max-w-2xl px-4 py-4 sm:px-6 sm:py-4 lg:max-w-7xl lg:px-8">
+        <h2 className="text-4xl pb-4">Mahsulotlar</h2>
         <div className="snap-mandatory snap-x  grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-6 ">
           {products.map((product) => (
             <a key={product.id} href={product.href} className="snap-normal snap-center group border-transparent border-solid border rounded-lg shadow-md shadow-gray-200 ">

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
+import Call from "./call";
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
@@ -56,7 +57,11 @@ const Layer = () => {
             ]}
           />
         </Sider>
+        
+         
+        
         <Layout>
+        
           <Header
             style={{
               padding: 0,
@@ -67,10 +72,11 @@ const Layer = () => {
               To'rt Markaz
             </Title>
           </Header>
+          <Call></Call>
           <Content
             style={{
-              margin: "18px 10px",
-              padding: 10,
+              margin: "10px 10px",
+              padding: 0,
               minHeight: 280,
               background: colorBgContainer,
               borderRadius: borderRadiusLG,
