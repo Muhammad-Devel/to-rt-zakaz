@@ -13,7 +13,7 @@ const { Header, Sider, Content } = Layout;
 const { Title } = Typography;
 
 const Layer = () => {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
