@@ -1,5 +1,5 @@
 import { Card } from 'antd';
-import { AntDesignOutlined, PhoneOutlined } from '@ant-design/icons'
+import { PhoneOutlined } from '@ant-design/icons'
 
 const Call = () => {
     return (
