@@ -5,6 +5,20 @@ const Login = () => {
     console.log("Received values of form: ", values);
   };
   return (
+    <>
+    <Row  style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
+      }}>
+        <div>
+          <h1>
+            Onlayn Do'kon
+          </h1>
+          <h3>Kirish</h3>
+        </div>
+    </Row>
     <Row
       style={{
         display: "flex",
@@ -67,6 +81,7 @@ const Login = () => {
         </Form.Item>
       </Form>
     </Row>
+    </>
   );
 };
 
