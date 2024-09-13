@@ -3,13 +3,27 @@
 @tailwind utilities;
 
 .ant-layout-sider-children {
-  background-color: #fff !important;
-}
-.ant-layout-sider-children ul[role="menu"] {
-  background-color: #fff !important;
-  color: #000;
+  background-color: #fafafa !important;
+  color: rgba(0, 0, 0, 0.8) !important;
 }
 
+.ant-layout-sider-children ul[role="menu"] {
+  background-color: #fafafa !important;
+}
+.ant-layout-sider-children ul li:hover {
+  background-color: #3b82f6 !important;
+  color: #fafafa !important;
+}
+.ant-layout-sider-children ul li.ant-menu-item-selected {
+  background-color: #3b82f6 !important;
+  color: #fafafa !important;
+}
+.ant-menu-item {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+.ant-btn-icon {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
 .ant-card-body {
   padding: 10px 30px !important;
 }

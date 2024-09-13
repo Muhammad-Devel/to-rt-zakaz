@@ -4,9 +4,11 @@ import Call from "./call";
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
-  UserAddOutlined,
   LoginOutlined,
   HomeOutlined,
+  WechatWorkOutlined,
+  ShoppingOutlined,
+  PhoneOutlined,
 } from "@ant-design/icons";
 import { Button, Layout, Menu, theme, Typography } from "antd";
 const { Header, Sider, Content } = Layout;
@@ -46,17 +48,17 @@ const Layer = () => {
               },
               {
                 key: "2",
-                icon: <HomeOutlined />,
+                icon: <ShoppingOutlined />,
                 label: <Link to="/">Buyurtmalarim</Link>,
               },
               {
                 key: "3",
-                icon: <HomeOutlined />,
+                icon: <PhoneOutlined />,
                 label: <Link to="/">Bog'lanish</Link>,
               },
               {
                 key: "4",
-                icon: <LoginOutlined />,
+                icon: <WechatWorkOutlined />,
                 label: <Link to="/">Onlayn Chat</Link>,
               },
               {
@@ -67,11 +69,8 @@ const Layer = () => {
             ]}
           />
         </Sider>
-        
-         
-        
+
         <Layout>
-        
           <Header
             style={{
               padding: 0,
