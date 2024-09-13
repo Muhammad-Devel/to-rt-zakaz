@@ -24,8 +24,24 @@ const validateMessages = {
 const onFinish = (values) => {
   console.log(values);
 };
-const Signin = () => (
-  <Row
+const Signin = () => {
+
+  return (
+    <>
+    <Row  style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
+      }}>
+        <div>
+          <h1>
+            Onlayn Do'kon
+          </h1>
+          <h3>Ro'hatdan o'tish</h3>
+        </div>
+    </Row>
+    <Row
     style={{
       display: "flex",
       justifyContent: "center",
@@ -84,5 +100,8 @@ const Signin = () => (
       </Form.Item>
     </Form>
   </Row>
-);
+    </>
+  )
+  
+}
 export default Signin;

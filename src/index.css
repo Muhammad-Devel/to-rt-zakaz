@@ -9,3 +9,7 @@
   background-color: #fff !important;
   color: #000;
 }
+
+.ant-card-body {
+  padding: 10px 30px !important;
+}

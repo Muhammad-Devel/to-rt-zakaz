@@ -42,17 +42,27 @@ const Layer = () => {
               {
                 key: "1",
                 icon: <HomeOutlined />,
-                label: <Link to="/">Home</Link>,
+                label: <Link to="/">Bosh Ekran</Link>,
               },
               {
                 key: "2",
-                icon: <LoginOutlined />,
-                label: <Link to="login">Log in</Link>,
+                icon: <HomeOutlined />,
+                label: <Link to="/">Buyurtmalarim</Link>,
               },
               {
                 key: "3",
-                icon: <UserAddOutlined />,
-                label: <Link to="signin">Sign in</Link>,
+                icon: <HomeOutlined />,
+                label: <Link to="/">Bog'lanish</Link>,
+              },
+              {
+                key: "4",
+                icon: <LoginOutlined />,
+                label: <Link to="/">Onlayn Chat</Link>,
+              },
+              {
+                key: "5",
+                icon: <LoginOutlined />,
+                label: <Link to="login">Log in</Link>,
               },
             ]}
           />
@@ -69,7 +79,7 @@ const Layer = () => {
             }}
           >
             <Title className="font-bold font-sans pt-2 pl-5">
-              To'rt Markaz
+              Onlayn Do'kon
             </Title>
           </Header>
           <Call></Call>
