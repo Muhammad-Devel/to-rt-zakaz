@@ -1,28 +1,19 @@
 import React, { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import Call from "./call";
-import {
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
-  LoginOutlined,
-  HomeOutlined,
-  WechatWorkOutlined,
-  ShoppingOutlined,
-  PhoneOutlined,
-} from "@ant-design/icons";
-import { Button, Layout, Menu, theme, Typography } from "antd";
+
+import { Layout, theme } from "antd";
+import Navbar from "./menu";
 const { Header, Sider, Content } = Layout;
-const { Title } = Typography;
 
 const Layer = () => {
-  const [collapsed, setCollapsed] = useState(true);
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
   return (
     <>
       <Layout style={{ height: "100vh" }}>
-        <Sider trigger={null} collapsible collapsed={collapsed}>
+        {/* <Sider trigger={null} collapsible collapsed={collapsed}>
           <div className="demo-logo-vertical" />
           <Button
             className="text-[#fff] mt-2 mb-3"
@@ -43,45 +34,56 @@ const Layer = () => {
             items={[
               {
                 key: "1",
-                icon: <HomeOutlined />,
+                icon: (
+                  <HomeOutlined className="text-lg sm:text-xl md:text-2xl" />
+                ),
                 label: <Link to="/">Bosh Ekran</Link>,
               },
               {
                 key: "2",
-                icon: <ShoppingOutlined />,
+                icon: (
+                  <ShoppingOutlined className="text-lg sm:text-xl md:text-2xl" />
+                ),
                 label: <Link to="/">Buyurtmalarim</Link>,
               },
               {
                 key: "3",
-                icon: <PhoneOutlined />,
+                icon: (
+                  <PhoneOutlined className="text-lg sm:text-xl md:text-2xl" />
+                ),
                 label: <Link to="/">Bog'lanish</Link>,
               },
               {
                 key: "4",
-                icon: <WechatWorkOutlined />,
+                icon: (
+                  <WechatWorkOutlined className="text-lg sm:text-xl md:text-2xl" />
+                ),
                 label: <Link to="/">Onlayn Chat</Link>,
               },
               {
                 key: "5",
-                icon: <LoginOutlined />,
+                icon: (
+                  <LoginOutlined className="text-lg sm:text-xl md:text-2xl" />
+                ),
                 label: <Link to="login">Log in</Link>,
               },
             ]}
+            className="text-xs sm:text-sm md:text-base w-full"
+            style={{ maxWidth: "300px" }} // Adjust max width as needed
           />
-        </Sider>
+        </Sider> */}
 
         <Layout>
           <Header
             style={{
-              padding: 0,
               background: colorBgContainer,
             }}
+            className="flex items-center justify-between px-2 sm:px-4 md:px-5 lg:px-6"
           >
-            <Title className="font-bold font-sans pt-2 pl-5">
-              Onlayn Do'kon
-            </Title>
+            <Navbar></Navbar>
+            <Call></Call>
           </Header>
-          <Call></Call>
+
           <Content
             style={{
               margin: "10px 10px",
