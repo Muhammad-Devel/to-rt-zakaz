@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import Call from "./call";
-
 import { Layout, theme } from "antd";
 import Navbar from "./menu";
+import Orders from "./orders";
+import MapEmbed from "./googlemap";
+import Home from "./home";
+import ProductCard from "./productcard";
+// import MapComponent from "./mapcomponent";
+
 const { Header, Sider, Content } = Layout;
 
 const Layer = () => {
@@ -13,66 +18,6 @@ const Layer = () => {
   return (
     <>
       <Layout style={{ height: "100vh" }}>
-        {/* <Sider trigger={null} collapsible collapsed={collapsed}>
-          <div className="demo-logo-vertical" />
-          <Button
-            className="text-[#fff] mt-2 mb-3"
-            type="text"
-            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-            onClick={() => setCollapsed(!collapsed)}
-            style={{
-              fontSize: "18px",
-              width: 35,
-              height: 35,
-              float: "right",
-            }}
-          />
-          <Menu
-            theme="dark"
-            mode="inline"
-            defaultSelectedKeys={["1"]}
-            items={[
-              {
-                key: "1",
-                icon: (
-                  <HomeOutlined className="text-lg sm:text-xl md:text-2xl" />
-                ),
-                label: <Link to="/">Bosh Ekran</Link>,
-              },
-              {
-                key: "2",
-                icon: (
-                  <ShoppingOutlined className="text-lg sm:text-xl md:text-2xl" />
-                ),
-                label: <Link to="/">Buyurtmalarim</Link>,
-              },
-              {
-                key: "3",
-                icon: (
-                  <PhoneOutlined className="text-lg sm:text-xl md:text-2xl" />
-                ),
-                label: <Link to="/">Bog'lanish</Link>,
-              },
-              {
-                key: "4",
-                icon: (
-                  <WechatWorkOutlined className="text-lg sm:text-xl md:text-2xl" />
-                ),
-                label: <Link to="/">Onlayn Chat</Link>,
-              },
-              {
-                key: "5",
-                icon: (
-                  <LoginOutlined className="text-lg sm:text-xl md:text-2xl" />
-                ),
-                label: <Link to="login">Log in</Link>,
-              },
-            ]}
-            className="text-xs sm:text-sm md:text-base w-full"
-            style={{ maxWidth: "300px" }} // Adjust max width as needed
-          />
-        </Sider> */}
-
         <Layout>
           <Header
             style={{
@@ -84,17 +29,39 @@ const Layer = () => {
             <Call></Call>
           </Header>
 
-          <Content
+          <div
+            className="flex justify-between items-center px-10 py-4"
             style={{
-              margin: "10px 10px",
-              padding: 0,
-              minHeight: 280,
+              margin: 10,
+              marginBottom: 0,
               background: colorBgContainer,
               borderRadius: borderRadiusLG,
             }}
           >
-            <Outlet />
-          </Content>
+            <Orders />
+          </div>
+          <div
+            className="flex justify-between items-center flex-wrap mx-auto px-10 py-4"
+            style={{
+              margin: 10,
+              marginBottom: 0,
+              background: colorBgContainer,
+              borderRadius: borderRadiusLG,
+            }}
+          >
+            <Home />
+          </div>
+          <div
+            className="flex justify-between items-center px-10 py-4"
+            style={{
+              margin: 10,
+              marginBottom: 0,
+              background: colorBgContainer,
+              borderRadius: borderRadiusLG,
+            }}
+          >
+            <MapEmbed />
+          </div>
         </Layout>
       </Layout>
     </>
