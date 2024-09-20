@@ -17,7 +17,7 @@ const Navbar = () => {
     <>
       <nav className="py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-12">
+          <div className="flex items-center md:justify-between h-12">
             <div className="flex-shrink-0 md:hidden flex items-center justify-center mr-3">
               <button
                 className="text-gray-950 hover:text-gray-950 focus:outline-none"
@@ -58,22 +58,22 @@ const Navbar = () => {
             >
               <div className="ml-10 px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
-                  href="#"
+                  href="#products"
                   className="text-gray-950 hover:border-b-4 border-indigo-500 block"
                 >
-                  Home
+                  Mahsulotlar
+                </a>
+                <a
+                  href="#map"
+                  className="text-gray-950 hover:border-b-4 border-indigo-500 block"
+                >
+                  Manzil
                 </a>
                 <a
                   href="#"
                   className="text-gray-950 hover:border-b-4 border-indigo-500 block"
                 >
                   About
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-950 hover:border-b-4 border-indigo-500 block"
-                >
-                  Services
                 </a>
                 <a
                   href="#"
@@ -86,16 +86,16 @@ const Navbar = () => {
             <div className="hidden md:block md:ml-4">
               <div className="ml-10 flex items-baseline space-x-8">
                 <a
-                  href="#"
+                  href="#products"
                   className="text-gray-950 hover:border-b-4 border-indigo-500"
                 >
-                  Home
+                  Mahsulotlar
                 </a>
                 <a
-                  href="#"
+                  href="#map"
                   className="text-gray-950 hover:border-b-4 border-indigo-500"
                 >
-                  About
+                  Manzil
                 </a>
                 <a
                   href="#"
